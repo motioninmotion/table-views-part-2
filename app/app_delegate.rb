@@ -1,9 +1,6 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    rootViewController = UIViewController.alloc.init
-    rootViewController.title = 'next'
-    rootViewController.view.backgroundColor = UIColor.whiteColor
-
+    rootViewController = TaskListViewController.new
     navigationController = UINavigationController.alloc.initWithRootViewController(rootViewController)
 
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
