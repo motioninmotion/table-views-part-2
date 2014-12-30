@@ -8,12 +8,12 @@ class TaskListViewController < UITableViewController
   end
 
   def tableView(tableView, numberOfRowsInSection: section)
-    Tasks.all.count
+    Task.all.count
   end
 
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
     cell = tableView.dequeueReusableCellWithIdentifier(TASK_CELL_ID, forIndexPath: indexPath)
-    cell.textLabel.text = Tasks.all[indexPath.row]
+    cell.textLabel.text = Task.all[indexPath.row].title
     cell
   end
 end
