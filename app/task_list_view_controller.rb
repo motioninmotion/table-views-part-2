@@ -11,7 +11,7 @@ class TaskListViewController < UITableViewController
     self.title = "Tasks"
   end
 
-  def tableView(tableView, numberOfRowsInSection: section)
+  def tableView(_, numberOfRowsInSection: _)
     Task.all.count
   end
 
