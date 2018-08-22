@@ -1,7 +1,7 @@
 class SubtitleCell < UITableViewCell
   ID = "SubtitleCell"
 
-  def initWithStyle(style, reuseIdentifier: reuseIdentifier)
+  def initWithStyle(_, reuseIdentifier: reuseIdentifier)
     super(UITableViewCellStyleSubtitle, reuseIdentifier: reuseIdentifier)
   end
 end
